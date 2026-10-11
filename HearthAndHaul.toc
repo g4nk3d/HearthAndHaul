@@ -1,0 +1,51 @@
+## Interface: 16001, 120105, 120100, 120001, 120000
+## Title: |cffe8b04aHearth & Haul|r
+## Notes: Dive the Undercroft below the Sleeping Gryphon, fight with guard and strike, and hearth home before the creatures knock your cast back. Everything you carry home is banked. Part of the Nether addon family.
+## Author: NetherUI
+## Version: 1.0.0
+## IconTexture: Interface\AddOns\HearthAndHaul\Media\Icon
+## SavedVariables: HearthAndHaulDB, NetherFamilyDB
+## OptionalDeps: NetherUI, NetherUI_Media, NetherSuite
+## X-License: All Rights Reserved
+## X-NetherSuite: 1
+## X-Nether-Family: 1
+## X-Nether-Order: 103
+## X-Nether-Description: Dive, fill your bag, and hearth home before the creatures knock your cast back.
+
+# The Nether family's shared pieces (the same file in every Nether addon)
+NetherFamily.lua
+NetherSound.lua
+NetherChannels.lua
+NetherFont.lua
+
+# Core: namespace, saved data (per character by GUID), generated art manifest and layout, art and sound access
+Core\Init.lua
+Data\Atlas.lua
+Data\Layout.lua
+Core\Assets.lua
+Core\Audio.lua
+
+# The game: zones, creatures and loot, the rules (no game API: the balance bot runs these), records
+Game\Data.lua
+Game\Rules.lua
+Game\Progress.lua
+Game\Daily.lua
+Game\Awards.lua
+
+# Daily hauls shared with other players (replay-checked)
+Comm\Leaderboard.lua
+
+# Screens: the game's own controls, the stage, the strip, the inn, the window, the screens, the minimap button
+UI\Widgets.lua
+UI\Stage.lua
+UI\HUD.lua
+UI\Inn.lua
+UI\Window.lua
+UI\Screens.lua
+UI\Minimap.lua
+
+# The Nether family: settings, slash commands, NetherSuite tile, Esc > Options page
+Family\Family.lua
+Family\Skin.lua
+Family\Widgets.lua
+Family\Options.lua
